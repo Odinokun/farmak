@@ -1,0 +1,55 @@
+.header {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px 80px;
+  pointer-events: none;
+
+  @include max(1200) {
+    padding: 50px 40px;
+  }
+  @include max(767) {
+    padding: 20px 15px;
+  }
+
+  svg {
+    display: block;
+    fill: #fff;
+  }
+}
+
+.header__lamikon {
+  svg {
+    width: 314px;
+    height: 80px;
+
+    @include max(1024) {
+      width: 200px;
+      height: 51px;
+    }
+    @include max(767) {
+      width: 80px;
+      height: 21px;
+    }
+  }
+}
+
+.header__logo {
+  svg {
+    width: 175px;
+    height: 80px;
+
+    @include max(1024) {
+      width: 112px;
+      height: 51px;
+    }
+    @include max(767) {
+      width: 46px;
+      height: 21px;
+    }
+  }
+}

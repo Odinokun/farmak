@@ -1,0 +1,17 @@
+// ===== responsive =====
+@mixin max($width) {
+  @media screen and (max-width: $width + 'px') {
+    @content;
+  }
+}
+
+// ===== responsive font =====
+@mixin responsive-font($pcSize, $mobSize) {
+  $maxWidth: 1920;
+  $addSize: $pcSize - $mobSize; //разница в размере
+  $maxWidth: $maxWidth - 320; //разница в контейнерах
+  font-size: $pcSize + px; //размер на десктопе
+  @media (max-width: 1920px) {
+    font-size: calc(#{$mobSize + px} +      #{$addSize}       * ((100vw - 320px)  / #{$maxWidth}));
+  }
+}

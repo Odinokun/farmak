@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+p {
+  margin: 0 0 10px 0;
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+svg {
+  display: block;
+  overflow: visible;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 80px;
+
+  @include max(1200) {
+    padding: 0 40px;
+  }
+  @include max(767) {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,108 @@
+.footer {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 40px;
+
+    @include max(1023) {
+      flex-direction: column;
+    }
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  width: 100%;
+
+  @include max(1023) {
+    margin-bottom: 20px;
+  }
+
+  @include max(767) {
+    flex-direction: column;
+  }
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  padding-right: 80px;
+
+  @include max(1550) {
+    padding-right: 40px;
+  }
+
+  @include max(767) {
+    margin-bottom: 15px;
+    padding-right: 0;
+  }
+
+  span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #2e95b4;
+
+    @include responsive-font(25, 15);
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+
+    @include responsive-font(25, 15);
+  }
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+}
+
+.footer__social {
+  margin-left: 80px;
+
+  @include max(1550) {
+    margin-left: 40px;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  svg {
+    fill: #2e95b4;
+  }
+}
+
+.footer__social--inst svg,
+.footer__social--linkedin svg {
+  width: 50px;
+  height: 50px;
+
+  @include max(1550) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.footer__social--fb svg {
+  width: 26px;
+  height: 50px;
+
+  @include max(1550) {
+    height: 35px;
+  }
+}
+
+.footer__social--youtube svg {
+  width: 62px;
+  height: 41px;
+
+  @include max(1550) {
+    width: 35px;
+  }
+}

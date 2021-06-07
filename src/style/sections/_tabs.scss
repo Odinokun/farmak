@@ -1,0 +1,47 @@
+.tabs{
+  display: flex;
+  flex-direction: column;
+
+}
+.tabs--01 {
+
+  .tab--02 {
+    order: 1;
+  }
+
+  .tab--01 {
+    order: 2;
+  }
+
+  .tab--03 {
+    order: 3;
+  }
+}
+
+.tabs--02 {
+  .tab--03 {
+    order: 1;
+  }
+
+  .tab--01 {
+    order: 2;
+  }
+
+  .tab--02 {
+    order: 3;
+  }
+}
+
+.tabs--03 {
+  .tab--01 {
+    order: 1;
+  }
+
+  .tab--02 {
+    order: 2;
+  }
+
+  .tab--03 {
+    order: 3;
+  }
+}

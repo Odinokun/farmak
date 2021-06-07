@@ -1,0 +1,22 @@
+extends ../_template
+
+block variables
+  - var title       = 'Ламікон'
+  - var description = 'Ламікон'
+
+block content
+  //begin content
+  main.main
+    include ../sections/top
+
+    .tabs#tabs
+      include ../sections/tab-01
+      include ../sections/tab-02
+      include ../sections/tab-03
+
+    include ../sections/all
+    include ../sections/table
+  //end content
+
+  include ../sections/footer
+  include ../sections/scripts

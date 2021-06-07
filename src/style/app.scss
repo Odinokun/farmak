@@ -1,0 +1,16 @@
+// core
+@import 'core/fonts';
+@import 'core/mixins';
+@import 'core/base';
+
+//section
+@import 'sections/header';
+@import 'sections/footer';
+@import 'sections/top';
+@import 'sections/tabs';
+@import 'sections/tab';
+@import 'sections/all';
+@import 'sections/table';
+
+//pages
+@import 'pages/index';
